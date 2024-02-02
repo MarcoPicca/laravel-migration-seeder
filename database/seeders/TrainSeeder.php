@@ -24,7 +24,7 @@ class TrainSeeder extends Seeder
                 'orario_di_arrivo' => '12:00:00',
                 'codice_treno' => '44464757',
                 'numero_carrozze' => 8,
-                'in_orario' => 'true',
+                'in_orario' => 'si',
                 'cancellato' => 'false',
             ],
             [

@@ -17,7 +17,7 @@
     <body>
         <header>
             <div class="d-flex justify-content-center">
-                <h1>Template Page</h1>
+                <h1 class="mb-3">Where is your train!?</h1>
             </div>
         </header>
         <main>

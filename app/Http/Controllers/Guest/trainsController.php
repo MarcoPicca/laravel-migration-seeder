@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
-use App\Models\Train;
 use Illuminate\Http\Request;
+use App\Models\Train;
 
 class trainsController extends Controller
 {
