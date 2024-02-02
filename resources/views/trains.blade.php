@@ -20,5 +20,8 @@
                 <h1>Template Page</h1>
             </div>
         </header>
+        <main>
+            @yield('main-content')
+        </main>
     </body>
 </html>

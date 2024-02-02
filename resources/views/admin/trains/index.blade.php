@@ -5,7 +5,7 @@
             <ul>
                 @foreach ($trains as $train)
                     <li>
-                        {{ $train->azienda }}
+                        {{ $train->azienda }} - {{ $train->orario_di_partenza }}
                     </li>
                 @endforeach
             </ul>

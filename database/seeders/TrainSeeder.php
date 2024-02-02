@@ -12,7 +12,7 @@ class TrainSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): void
+    public function run() : void
     {
         $Trains= [
             [
@@ -137,5 +137,21 @@ class TrainSeeder extends Seeder
             ],
         ];
             
+        foreach ($Trains as $train) {
+            $newTrain = new Train();
+
+            $newTrain->id = $train['id'];
+            $newTrain->azienda = $train['azienda'];
+            $newTrain->stazione_di_partenza = $train['stazione_di_partenza'];
+            $newTrain->stazione_di_arrivo = $train['stazione_di_arrivo'];
+            $newTrain->orario_di_partenza = $train['orario_di_partenza'];
+            $newTrain->orario_di_arrivo = $train['orario_di_arrivo'];
+            $newTrain->codice_treno = $train['codice_treno'];
+            $newTrain->numero_carrozze = $train['numero_carrozze'];
+            $newTrain->in_orario = $train['in_orario'];
+            $newTrain->cancellato = $train['cancellato'];
+            $newTrain->save();
+            
+        }
     }
 }
